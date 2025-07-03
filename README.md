@@ -17,3 +17,4 @@ After installing arch I usually install a minimal GNOME version, with Papirus an
  - Alacritty terminal and custom .toml
  - fastfetch
  - bash custom PS1 
+##### After rebooting, open GNOME Tweaks to apply your icon and cursor themes. You can also set the included wallpaper if desired
