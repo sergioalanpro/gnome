@@ -1,43 +1,39 @@
 
-echo "[+] Actualizando sistema e instalando paquetes base..."
+echo "[+] Updating system and installing base packages..."
 sudo pacman -Syu --noconfirm
-sudo pacman -S --noconfirm gnome-shell gnome-control-center nautilus gdm gnome-text-editor fastfetch
+sudo pacman -S --noconfirm gnome-shell gnome-control-center nautilus gdm gnome-text-editor fastfetch alacritty gnome-tweaks
 
-echo "[+] Habilitando GDM..."
+echo "[+] Enabling GDM..."
 sudo systemctl enable gdm.service
-sudo systemctl start gdm.service
 
-echo "[+] Clonando repositorio de configuración..."
+echo "[+] Cloning repository..."
 git clone https://github.com/sergioalanpro/archfiles.git ~/Documents/archfiles
 
-echo "[+] Instalando temas de íconos..."
+echo "[+] Copying to .icons..."
 mkdir -p ~/.icons
 cp -r ~/Documents/archfiles/icons/* ~/.icons/
 
-echo "[+] Copiando configuración de fastfetch y alacritty..."
+echo "[+] Copying to .config..."
 mkdir -p ~/.config
 cp -r ~/Documents/archfiles/config/* ~/.config/
 
-echo "[+] Copiando wallpaper..."
+echo "[+] Copying wallpaper..."
 mkdir -p ~/Pictures
 cp ~/Documents/archfiles/wallpapers/wallpaper.png ~/Pictures/
 
-echo "[+] Listo. Puedes aplicar tu tema o fondo desde GNOME o vía comandos."
-
-echo "[+] Copiando archivo .bashrc..."
+echo "[+] Copying .bashrc..."
 cp -f ~/Documents/archfiles/.bashrc ~/.bashrc
 
-
-echo "[+] Haciendo carpeta gitclones"
+echo "[+] Making gitclones folder..."
 mkdir -p ~/gitclones && cd ~/gitclones
 
-echo "[+] Instalando dependencias para ble.sh..."
+echo "[+] Installing dependencies for ble.sh..."
 sudo pacman -S --noconfirm make gawk
 
-echo "[+] Clonando e instalando ble.sh..."
+echo "[+] Cloning and installing ble.sh..."
 git clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh.git
 make -C ble.sh install PREFIX=~/.local
 
-echo "[+] ble.sh instalado en ~/.local/share/blesh/"
+echo "[+] ble.sh installed in ~/.local/share/blesh/"
 
-echo "[+] Listo..."
+echo "[+] Ready, please reboot..."
