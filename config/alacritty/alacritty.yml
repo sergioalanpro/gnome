@@ -1,0 +1,20 @@
+font:
+  normal:
+    family: "Adwaita Mono"  # ¡Esta es la clave! Usa la versión mono.
+    style: "Regular"       # También puedes usar "Bold" o "Italic" si lo prefieres
+  size: 11.0               # Tamaño ajustable a tu pantalla
+
+# Opcional: Añade padding para mejor legibilidad
+window:
+  padding:
+    x: 8
+    y: 6
+
+# Opcional: Tema de colores que combine con GNOME Adwaita
+colors:
+  primary:
+    background: "#f6f5f4"   # Fondo claro estilo Adwaita
+    foreground: "#2e3436"   # Texto oscuro
+  cursor:
+    text: "#f6f5f4"
+    cursor: "#2e3436"

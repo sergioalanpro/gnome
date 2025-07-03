@@ -1,0 +1,33 @@
+
+[window]
+dimensions            = { columns = 88, lines = 25 }
+opacity               = 0.998
+
+[font]
+normal = { family = "Adwaita Mono", style = "Regular" }
+
+size = 12  # Puedes ajustar el tamaño
+
+[colors.primary]
+background            = "#282828"
+
+[colors.normal]
+black                 = "#000000"
+red                   = "#C83545"
+green                 = "#00cf1c"
+yellow                = "#FFE000"
+blue                  = "#0099d7"
+magenta               = "#F5C2E7"
+cyan                  = "#00aac2"
+white                 = "#dcdcdc"
+
+[colors.bright]
+black                 = "#000000"
+red                   = "#e83535"
+green                 = "#61ff54"
+yellow                = "#FFE000"
+blue                  = "#0099d7"
+magenta               = "#FF00FF"
+cyan                  = "#00ffe0"
+white                 = "#dcdcdc"
+
