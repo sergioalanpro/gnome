@@ -1,6 +1,6 @@
 
 echo "[+] Updating system and installing base packages..."
-sudo pacman -Syu --noconfirm
+sudo pacman -Syu
 sudo pacman -S gnome-shell gnome-control-center nautilus gdm gnome-text-editor fastfetch alacritty gnome-tweaks decibels loupe
 
 echo "[+] Enabling GDM..."
