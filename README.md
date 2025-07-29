@@ -8,10 +8,13 @@ After installing arch I usually install a minimal GNOME version, with Papirus an
 - gdm
 - gnome-text-editor
 - gnome-tweaks
+- Totem (Video player)
+- Loupe (Image viewer)
+- Decibels (Audio Player)
 
 -Makeup
 
-  - Papirus Adwaita Icons (https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
+ - Papirus Adwaita Icons (https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
  - Bibata Modern Classic Cursors (https://github.com/ful1e5/Bibata_Cursor)
  - Bash line editor like Zsh for bash (https://github.com/akinomyoga/ble.sh)
  - Alacritty terminal and custom .toml
